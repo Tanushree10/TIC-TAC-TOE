@@ -19,13 +19,10 @@ def check():
     if board['D1'] == 'X' and board['D2'] == 'X' and board['D3'] == 'X':
         print('Player One Won!!')
         return 1
-    # for horizontal(end)
-    # for diagonal(start)
     if board['T1'] == 'X' and board['M2'] == 'X' and board['D3'] == 'X':
         print('Player One Won!!')
         return 1
-    # for diagonal(end)
-    # for vertical(start)
+
     if board['T1'] == 'X' and board['M1'] == 'X' and board['D1'] == 'X':
         print('Player One Won!!')
         return 1
@@ -35,12 +32,9 @@ def check():
     if board['T3'] == 'X' and board['M3'] == 'X' and board['D3'] == 'X':
         print('Player One Won!!')
         return 1
-    # for vertical(end)
-
-    # checking the moves of player two
     if board['T1'] == 'O' and board['T2'] == 'O' and board['T3'] == 'O':
         print('Player Two Won!!')
-        return 1  # used to end the game
+        return 1  
     if board['M1'] == 'O' and board['M2'] == 'O' and board['M3'] == 'O':
         print('Player Two Won!!')
         return 1
